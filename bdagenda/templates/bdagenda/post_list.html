@@ -11,6 +11,15 @@
             <p>published: 21.01.2023, 10:36</p>
             <h2><a href="">Nuevo usuarios</a></h2>
             <p>En este apartado pondremos la entreda estandar de nuestra agenda para que usted pueda ingresar sus datos de contacto:</p>
+
+ 			{% for contacto in contactos %} 
+ 				<div>
+        		<p> nombre: {{ contacto.nombre }}</p>
+        		<p> correo: {{ contacto.correo }}<p>
+        		<p> télefono: {{ contacto.phonenumb }}</p>
+    			</div>
+    		{% endfor %}
+            
         </div>
 
         <div>
